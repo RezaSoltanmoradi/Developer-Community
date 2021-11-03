@@ -1,28 +1,26 @@
 import { Component } from 'react';
 import SimpleContext from './../context/simpleContext';
-
 class GlobalState extends Component {
     constructor() {
         super();
     }
     state = {
-        people: [],
-        person: '',
-        showPeople: true,
-        showHeader: true,
-        apptitle: 'مدیریت کننده اعضا',
+        // character
+        // todo: []
     };
+    // events = () => { return events}
+    // deleted = () => { return (deleted) }
     render() {
         return (
             <SimpleContext.Provider
                 value={{
-                    people: this.state.people,
-                    person: this.state.person,
-                    handleDeletePerson: this.handleDeletePerson,
-                    handleNewPerson: this.handleNewPerson,
-                    handleChangeName: this.handleChangeName,
+                    // all charactor
+                    state: this.state,
+                    //  events: this.events
+                    //  deleted: this.deleted
                 }}
             >
+                 {/* this is required */}
                 {this.props.children}
             </SimpleContext.Provider>
         );

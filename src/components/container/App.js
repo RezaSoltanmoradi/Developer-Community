@@ -1,12 +1,9 @@
 import React from 'react';
-import Header from '../common/header';
 
+// classes type we need this code:
+// static contextType = SimpleContext;
 function App() {
-  return (
-    <div className="container d-flex justify-content-center align-items-center">
-      <Header/>
-    </div>
-  );
+    return <div className="rtl text-center"></div>;
 }
 
 export default App;
